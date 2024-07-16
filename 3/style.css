@@ -21,12 +21,9 @@ ul {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: start;
-
-
 }
 
-#trash-bin
-{
+#trash-bin {
   border-radius: 50%;
   opacity: 0.5;
   background: white;
@@ -39,24 +36,26 @@ ul {
   opacity: 1;
 }
 
-
 #addButton {
   width: 50px;
   position: absolute;
   bottom: 20px;
   right: 20px;
-
 }
-
 
 .card {
   flex-direction: column;
-  background-color: rgb(156, 159, 195);
+  background-color: rgba(219, 220, 236, 0.5);
   border-radius: 2%;
   border: 2px solid white;
   margin: 10px;
   padding: 2%;
   width: 300px;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background-color: rgba(219, 220, 236, 0.8);
 }
 
 .card-content p {
