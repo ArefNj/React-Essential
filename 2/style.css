@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(86, 126, 219);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: start;
+
+
+}
+
+#trash-bin
+{
+  border-radius: 50%;
+  opacity: 0.5;
+  background: white;
+  padding: 2px;
+  border: 2px solid white;
+  width: 40px;
+  height: 40px;
+}
+
+
+.card {
+  flex-direction: column;
+  background-color: rgb(156, 159, 195);
+  border-radius: 2%;
+  border: 2px solid white;
+  margin: 10px 20px;
+  padding: 2%;
+  width: 300px;
+}
+
+.card-content p {
+  margin-bottom: 3px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  padding: 2px;
+}
