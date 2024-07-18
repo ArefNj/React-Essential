@@ -1,8 +1,6 @@
 import "./App.css";
-
-function Hello(text) {
-  return <p>Hello {text.name} this is React!</p>;
-}
+import Hello from "./components/Hello";
+import Button from "./components/Button";
 
 function App() {
   return (
@@ -10,6 +8,7 @@ function App() {
       <Hello name="Ali"></Hello>
       <Hello name="Gholy"></Hello>
       <Hello name="Dapsh"></Hello>
+      <Button> Click Me! </Button>
     </div>
   );
 }
