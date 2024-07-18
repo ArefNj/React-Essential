@@ -1,0 +1,13 @@
+.trash-bin {
+    border-radius: 50%;
+    opacity: 0.5;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+}
+
+.trash-bin:hover {
+    background: rgba(255, 255, 255, 0.8);
+}

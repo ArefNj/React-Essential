@@ -1,0 +1,7 @@
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 12px;
+    padding: 2px;
+  }
