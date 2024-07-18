@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1em;
+
+  font-size: large;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  justify-content: center;
+  align-items: center;
+
+  transition: border-color 0.25s;
+  max-height: 50px;
+  max-width: 50px;
+  margin: 20px;
+}
+
+.btn:hover {
+  border-color: #646cff;
+}
+
+
