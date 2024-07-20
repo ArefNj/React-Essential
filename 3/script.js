@@ -7,7 +7,7 @@ function addCard() {
   newCard.innerHTML = `
     <div class="card-header">
       <h2>Item ${newCountCards}</h2>
-      <img id="trash-bin" src="./trash-bin.jpg" alt="bin">
+      <img class="trash-bin" src="./trash-bin.jpg" alt="bin">
     </div>
     <div class="card-content">
     <p>
@@ -22,29 +22,21 @@ function addCard() {
     </p>
     </div>
   `;
+  // add delete event for new cards
+  newCard
+    .querySelector(".trash-bin")
+    .addEventListener("click", () => newCard.remove());
 
   cardContainer.appendChild(newCard);
-  addDeleteEvent(newCard.querySelector("#trash-bin"));
-}
-
-function updateItemNumbers() {
-  const cards = document.querySelectorAll(".card");
-  cards.forEach((card, index) => (card.querySelector(".card-header h2").textContent = `Item ${index + 1}`));
 }
 
 // Add new card
 const addBottom = document.getElementById("addButton");
 addBottom.addEventListener("click", addCard);
 
-
-// add delete event for all cards
-document.querySelectorAll("#trash-bin").forEach(function (bin) {
-  addDeleteEvent(bin);
-});
-
-function addDeleteEvent(element) {
-  element.addEventListener("click", function () {
-    element.closest(".card").remove();
-    updateItemNumbers();
-  });
-}
+// add delete event for 3 existed cards
+document
+  .querySelectorAll(".trash-bin")
+  .forEach((bin) =>
+    bin.addEventListener("click", () => bin.closest(".card").remove())
+  );
