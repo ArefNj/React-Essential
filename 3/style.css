@@ -1,14 +1,11 @@
 * {
-  margin: 0px;
-  padding: 5px;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: rgb(86, 126, 219);
   display: flex;
-  justify-content: space-evenly;
+  background-color: rgb(86, 126, 219);
   flex-direction: column;
 }
 
@@ -23,24 +20,29 @@ ul {
   align-items: start;
 }
 
-#trash-bin {
-  border-radius: 50%;
-  opacity: 0.5;
+.trash-bin {
+  border-radius: 10px;
+  opacity: 0.8;
   background: white;
   padding: 2px;
   border: 2px solid white;
   width: 40px;
   height: 40px;
+  transition: opacity 0.25s, border-color 0.2s;
 }
-#trash-bin:hover {
+.trash-bin:hover {
   opacity: 1;
+  border-color: rgba(255, 0, 0, 0.694);
 }
 
 #addButton {
-  width: 50px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
+  display: flow-root;
+  align-self: end;
+  width: fit-content;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 15px;
 }
 
 .card {
