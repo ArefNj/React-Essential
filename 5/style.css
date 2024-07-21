@@ -1,5 +1,5 @@
 * {
-  font-family: "Segoe UI", Tahoma, Verdana;
+  font-family: "Segoe UI", Tahoma, Verdana, serif;
 }
 
 body {
@@ -11,12 +11,14 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
+
+  background-color: #58afe6;
+
   padding: 20px;
   width: 30rem;
-  flex-direction: column;
   min-height: 30em;
   border-radius: 20px;
-  background-color: #58afe6;
 }
 
 input {
@@ -31,7 +33,7 @@ input {
 }
 
 .addButton {
-  margin: 10px 0px;
+  margin: 10px 0;
   padding: 8px 5px;
   opacity: 0.9;
   display: flex;
@@ -42,7 +44,7 @@ input {
 .itemSection {
   display: flex;
   justify-content: start;
-  margin: 0px 2rem;
+  margin: 0 2rem;
   flex-direction: column;
 }
 .items {
@@ -51,14 +53,16 @@ input {
   flex-direction: column;
 
   padding: 10px;
-  margin: 20px;
 }
 
 .item {
-  background-color: rgb(191, 190, 190);
   display: flex;
+  justify-content: center;
+  background-color: rgb(191, 190, 190);
   padding: 8px;
   border-radius: 2px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 18rem;
 }
 
 h2 {
@@ -69,5 +73,10 @@ p {
   display: flex;
   align-self: end;
   font-size: small;
-  margin: 0px 0px 0px 8px;
+  margin: 0 0 0 8px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
 }
